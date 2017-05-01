@@ -1,0 +1,386 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.icon{
+  padding-bottom: 10px;
+  display: -webkit-flex;
+              display: flex;
+//  margin: 0px;
+}
+
+
+li{
+  color:rgb(96,190,174);
+
+}
+.pic {
+  display: -webkit-flex;
+              display: flex;
+}
+.title-box{
+  display: -webkit-flex;
+              display: flex;
+}
+#titleA{
+  background-color: rgb(255, 255, 255);
+}
+#titleB{
+  color: #ffffff;
+  background-color: #000000;
+}
+#nd-nav{
+  text-align: center;
+}
+
+#nd-nav div{
+  color:rgb(96,190,174);
+  background-color: rgb(239,248,247);
+  padding:10px 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  float:left;
+  border-right: .5px solid rgb(217,239,236);
+  width:25%;
+}
+#nd-nav div:nth-last-child(1){
+  border-right : 0px solid rgb(217,239,236);
+}
+#nd-nav div h3{
+  font-size: 2rem;
+}
+#nd-nav div p{
+  font-size: 1rem;
+}
+
+.title{
+  color:rgb(96,190,174);
+  font-size: 1.8rem;
+}
+time{
+  color: #AAA;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        max-width: 350px;
+        margin:10px auto 0px auto;
+    }
+    ul{
+//      position: fixed;
+//      top:10px;
+    }
+    li{
+      display: -webkit-inline-flex;
+              display: inline-flex;
+
+      font-size: 1.4rem;
+      margin: 0px 5px;
+    }
+    aside{
+      display: none;
+    }
+    .icon{
+
+    }
+    .icon img{
+      width:60px;
+      height:auto;
+      align-self: center;
+      -webkit-flex: none;
+              flex: none;
+    }
+    .pic{
+
+//      overflow: hidden;
+      flex-direction:column;
+    }
+    .pic img{
+      display: -webkit-flex;
+      display: flex;
+//      -webkit-flexflow:nowrap;
+      flex:auto;
+      height:233px;
+      width:auto;
+
+    }
+    .title-box{
+      flex-direction:column;
+    }
+    .title-box div{
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 10px;
+      display: block;
+    }
+    #nav-info{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    #nd-nav{
+      display: none;
+    }
+    .arti-with-pic{
+      margin: 10px 0px;
+    }
+    img{
+
+      max-width: 350px;
+      height: auto;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
+    body {
+        max-width: 480px;
+        margin:20px auto 0px auto;
+    }
+    #nav-info{
+
+    }
+    nav{
+
+    }
+    ul{
+      float: right;
+    }
+    li{
+      display: -webkit-inline-flex;
+              display: inline-flex;
+      font-size: 1.7rem;
+      margin:0px 10px;
+    }
+    aside{
+      display: none;
+    }
+    .icon{
+      float: left;
+      display: inline-block;
+    }
+    .icon img{
+      width:60px;
+      height:auto;
+//      align-self: center;
+      -webkit-flex: none;
+              flex: none;
+    }
+    .pic{
+
+      width:100%;
+//      overflow: hidden;
+      flex-direction:column;
+
+
+    }
+    .pic img{
+      display: -webkit-flex;
+      display: flex;
+//      -webkit-flexflow:nowrap;
+      flex:auto;
+      height:248px;
+      width:auto;
+
+    }
+    .title-box{
+      flex-direction:column;
+    }
+    .title-box div{
+      font-size: 1rem;
+      line-height: 1rem;
+      padding: 10px;
+      display: block;
+    }
+
+    #nd-nav{
+      display: none;
+    }
+    #archives{
+      display: inline-flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .arti-with-pic{
+      display: inline-block;
+      width: 47.5%;
+      margin: 20px 5px;
+    }
+    .arti-with-pic img{
+      max-width: 100%;
+      height: auto;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    body {
+        max-width: 768px;
+        margin:30px auto 0px auto;
+    }
+
+    nav{
+
+    }
+    ul{
+      float: right;
+    }
+    li{
+      display: -webkit-inline-flex;
+              display: inline-flex;
+      font-size: 1.7rem;
+      margin:0px 10px;
+    }
+    aside{
+      display: none;
+    }
+    .icon{
+      float: left;
+    }
+    .icon img{
+      width:100px;
+      height:auto;
+      -webkit-flex: none;
+              flex: none;
+    }
+    .pic{
+
+      width:100%;
+      overflow: hidden;
+      flex-direction:column;
+
+
+    }
+    .pic img{
+      height:445px;
+
+    }
+    .title-box{
+
+      flex-direction:column;
+    }
+    .title-box div{
+      display: inline-flex;
+      position: relative;
+      font-size: 2.2rem;
+      line-height: 30px;
+      padding: 15px;
+      align-self: flex-end;
+      bottom: 80px;
+
+    }
+
+    #nd-nav .option p{
+      display: none;
+    }
+    #archives{
+      display: inline-flex;
+//      flex-wrap: wrap;
+//      margin: 0px 10px;
+    }
+    .arti-with-pic{
+      display: inline-block;
+      width: 47.5%;
+      margin: 0px 10px;
+    }
+    .arti-with-pic img{
+      max-width: 100%;
+      height: auto;
+    }
+}
+@media only screen and (min-width:991px) {
+    body {
+        max-width: 991px;
+        margin:50px auto 0px auto;
+    }
+    #main{
+      display: inline-block;
+      float: right;
+      width: 80%;
+      right: 0px;
+    }
+    #nav-info{
+      float: left;
+      width: 20%;
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 18px;
+    }
+    aside{
+      display: block;
+      width: 100%;
+      position: relative;
+      color: rgb(87, 87, 87);
+    //  right: 100px;
+    }
+    aside h5{
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    aside p{
+      font-size: 0.8rem;
+    }
+
+
+    nav{
+      flex: none;
+    }
+    li{
+      display: -webkit-flex;
+              display: flex;
+      font-size: 1.7rem;
+      margin:0px 10px;
+    }
+
+    .icon{
+      display: inline-block;
+    }
+    .icon img{
+      width:100px;
+      height:auto;
+      align-self: center
+      -webkit-flex: none;
+              flex: none;
+    }
+    .pic{
+
+      width:100%;
+      overflow: hidden;
+      flex-direction:column;
+
+
+    }
+    .pic img{
+      height:445px;
+
+    }
+    .title-box{
+
+      flex-direction:column;
+    }
+    .title-box div{
+      display: inline-flex;
+      position: relative;
+      font-size: 2.2rem;
+      line-height: 30px;
+      padding: 15px;
+      align-self: flex-end;
+      bottom: 80px;
+
+    }
+
+
+    #archives{
+      display: inline-flex;
+//      flex-wrap: wrap;
+//      margin: 0px 10px;
+    }
+    .arti-with-pic{
+      display: inline-block;
+      width: 47.5%;
+      margin: 0px 10px;
+    }
+    .arti-with-pic img{
+      max-width: 100%;
+      height: auto;
+    }
+}
